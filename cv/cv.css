@@ -1,0 +1,102 @@
+body {
+	background: #525659;
+}
+
+p {
+	margin: 0.25em 0;
+	font-family: Arial, sans-serif;
+}
+
+#page {
+	width: 700px;
+	margin: 20px auto 0;
+	background: white;
+	box-shadow: 1px 1px 5px #0000005F, 1px -1px 5px #0000005F, -1px 1px 5px #0000005F, -1px -1px 5px #0000005F;
+	padding: 50px;
+}
+
+#contactInfo {
+	width: 202px;
+	float: left;
+	text-align: right;
+	padding: 0 30px 0 0;
+}
+
+#contactInfo img {
+	margin-bottom: 15px;
+}
+
+#contactInfo a {
+	color: black;
+	text-decoration: none;
+}
+
+#mainInfo {
+	border-left: 3px solid lightgray;
+	width: 465px;
+	float: right;
+}
+
+.label {
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	margin-right: 4px;
+	color: gray;
+}
+
+.contactInfoText {
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	margin-right: 4px;
+	margin-bottom: 10px;
+	color: black;
+}
+
+h1 {
+	font-size: 35px;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.section {
+	padding-left: 30px;
+	border-top: 1px solid lightgray;
+}
+
+.firstSection {
+	border-top: none;
+}
+
+.sectionHeader {
+	font-size: 18px;
+	font-family: Verdana, sans-serif;
+	font-weight: normal;
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	color: gray;
+}
+
+.topComment {
+	margin-top: 20px;
+	font-size: 11px;
+	color: gray;
+}
+
+.mainInfoSection {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.downComment {
+	font-size: 14px;
+}
+
+.secondDownComment {
+	font-size: 12px;
+	color: gray;
+	padding-left: 20px;
+}
