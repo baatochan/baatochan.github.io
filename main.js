@@ -1,3 +1,7 @@
+/**
+ * TODO: Would be pretty nice to actually change this shit below... I just can't believe I did that...
+ */
+
 /* Funkcja ustalająca wysokość marginesu */
 
 var g = $("#card").outerHeight(true);
