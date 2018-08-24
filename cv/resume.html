@@ -1,0 +1,294 @@
+<!--*
+    * --------------------------------------------------------------------------------
+    * "THE BEER-WARE LICENSE" (Revision 42):
+    * <kotlet.bahn@gmail.com> wrote this file.  As long as you retain this notice you
+    * can do whatever you want with this stuff. If we meet some day, and you think
+    * this stuff is worth it, you can buy me a beer in return.    Iwo Bujkiewicz
+    * --------------------------------------------------------------------------------
+    *-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Open+Sans:400,400i,700,700i" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous" />
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			width: 100%;
+			box-sizing: border-box;
+			margin: 0;
+			font-family: 'Open Sans', sans-serif;
+		}
+		section {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			width: calc(210mm - 0.5px);
+			max-height: calc(297mm - 0.5px);
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+		header {
+			flex: 0 0;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			padding: 15mm 10mm 5mm 15mm;
+			background: #228866;
+			color: #FFFFFF;
+		}
+		header > * {
+			margin-right: 5mm;
+		}
+		div.content {
+			flex: 1 1 calc(297mm - 0.5px);
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: stretch;
+		}
+		aside {
+			width: 57.5mm;
+			padding: 0 5mm 15mm 15mm;
+			background: #efefef;
+			font-size: 0.875em;
+		}
+		article {
+			flex: 1;
+			padding: 0 15mm 15mm 1mm;
+		}
+		h1 {
+			font-family: 'Merriweather Sans', sans-serif;
+			font-weight: 300;
+			margin: 0 0 0.25em 0;
+		}
+		h4 {
+			margin: 0.75em 0 0.5em 0;
+			font-size: 1.25em;
+			font-weight: unset;
+		}
+		p {
+			margin: 0.5em 0 0.5em 0;
+		}
+		img#photo {
+			height: 50mm;
+		}
+		div#headerinfo {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: 0.375rem 0 0.375rem 0;
+		}
+		a#email {
+			color: inherit;
+			text-decoration: underline #FFFFFF40;
+		}
+		a#email:hover {
+			text-decoration-color: #FFFFFF80;
+		}
+		div#introduction {
+			font-size: 0.875em;
+		}
+		div#introduction p {
+			margin-bottom: 0;
+		}
+		ul.unindented-list {
+			list-style-type: none;
+			padding-left: 0;
+		}
+		ul.unindented-list > li {
+			margin: 0.5em 0 0.5em 0;
+		}
+		ul.inline-blocklist {
+			display: inline;
+			padding: 0;
+		}
+		ul.inline-blocklist > li {
+			display: inline;
+			padding: 0 0.125em;
+			border: 1.25px solid;
+			border-radius: 0.25em;
+			background: #00000033
+		}
+		p.blocklist-label {
+			margin: 0 0 0.25em 0;
+		}
+		.key-value {
+			display: flex;
+			justify-content: space-between;
+		}
+		.key-value > * {
+			display: inline;
+			vertical-align: middle;
+			margin: auto 0;
+		}
+		.subdescription {
+			font-size: 0.875em;
+			color: #404040;
+		}
+
+		@media screen {
+			body {
+				background: #484A4F;
+			}
+			section {
+				margin: 0.75em auto;
+				background: #FFFFFF;
+				box-shadow: 0 0 0.5em 0 #000000C0/*, inset 0 0 0px 1px #000000*/;
+			}
+		}
+
+		@media print {
+			section {
+				margin: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<header>
+			<img id="photo" src="img/me_notsquare.jpg" />
+			<div id="headerinfo">
+				<div>
+					<h1>Iwo Bujkiewicz</h1>
+					<p><a id="email" href="mailto:iwo.bujkiewicz@gmail.com">iwo.bujkiewicz@gmail.com</a></p>
+				</div>
+				<div id="introduction">
+					<p>University student between sixth and seventh semester of bachelor studies, looking for an internship or student job</p>
+					<p>From Wrocław, Poland</p>
+			</div>
+		</header>
+
+		<div class="content">
+			<aside>
+				<h4>Languages</h4>
+				<ul class="unindented-list">
+					<li class="key-value">
+						<p>Polish</p>
+						<p>Native</p>
+					</li>
+					<li class="key-value">
+						<p>English</p>
+						<p>C1</p>
+					</li>
+					<li class="key-value">
+						<p>German</p>
+						<p>A1</p>
+					</li>
+					<li class="key-value">
+						<p>Spanish</p>
+						<p>A1</p>
+					</li>
+				</ul>
+
+				<h4>Hobbies</h4>
+				<ul class="unindented-list">
+					<li>Tinkering with computers and networks</li>
+					<li>Game development</li>
+					<li>Programming</li>
+					<li>Playing games</li>
+					<li>Live streaming</li>
+					<li>Solving problems</li>
+				</ul>
+
+				<h4>Interests</h4>
+				<ul class="unindented-list">
+					<li>PC games</li>
+					<li>Computers and IT</li>
+					<li>Information security</li>
+					<li>Languages and translation</li>
+					<li>Public transport</li>
+					<li>Urban planning</li>
+				</ul>
+			</aside>
+
+			<article>
+				<ul class="fa-ul">
+					<li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>
+						<h4>Studying Computer Science</h4>
+						<p>
+							Wrocław University of Science and Technology<br />
+							Faculty of Electronics
+						</p>
+						<p class="subdescription">Bachelor of Engineering programme, Oct 2015 - Feb 2019</p>
+					</li>
+
+					<li><span class="fa-li"><i class="fas fa-file-alt"></i></span>
+						<h4>Without professional experience</h4>
+						<ul class="unindented-list">
+							<li>Worked on a number of minor university and personal projects</li>
+						</ul>
+					</li>
+
+					<li><span class="fa-li"><i class="fas fa-code"></i></span>
+						<h4>Can code in several languages</h4>
+						<ul class="unindented-list">
+							<li>
+								<p class="blocklist-label">Competent in</p>
+								<ul class="inline-blocklist">
+									<li style="border-color: #bf7913; background-color: #f2d4aa;">Java</li>
+									<li style="border-color: #555555; background-color: #d9d9d9;">C</li>
+								</ul>
+							</li>
+							<li>
+								<p class="blocklist-label">Familiar with</p>
+								<ul class="inline-blocklist">
+									<li style="border-color: #178600; background-color: #a3d998;">C#</li>
+									<li style="border-color: #f34b7d; background-color: #ffb3c9;">C++</li>
+									<li style="border-color: #7fcc4e; background-color: #c6f2aa;">Shell</li>
+									<li style="border-color: #6E4C13; background-color: #d9c398;">Assembly</li>
+									<li style="border-color: #e34c26; background-color: #ffc2b3;">HTML</li>
+									<li style="border-color: #563d7c; background-color: #c6aaf2;">CSS</li>
+									<li style="border-color: #d9c841; background-color: #fff6b3;">JavaScript</li>
+									<li style="border-color: #b3b3b3; background-color: #e6e6e6;">SQL</li>
+								</ul>
+							</li>
+							<li>
+								<p class="blocklist-label">Want to learn</p>
+								<ul class="inline-blocklist">
+									<li style="border-color: #dea584; background-color: #ffcfb3;">Rust</li>
+									<li style="border-color: #3572A5; background-color: #aad1f2;">Python</li>
+									<li style="border-color: #F18E33; background-color: #ffd7b3;">Kotlin</li>
+									<li style="border-color: #c0c0c0; background-color: #f2f2f2;">Pony</li>
+									<li style="border-color: #375eab; background-color: #a1b8e6;">Go</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li><span class="fa-li"><i class="fas fa-code-branch"></i></span>
+						<h4>Acquainted with version control and build systems</h4>
+						<ul class="unindented-list">
+							<li>Proficient with Git</li>
+							<li>Familiar with GNU Make and Maven</li>
+						</ul>
+					</li>
+
+					<li><span class="fa-li"><i class="fas fa-users"></i></span>
+						<h4>With a collaboration-oriented approach</h4>
+						<ul class="unindented-list">
+							<li>Aiming to write clean, self-documenting code</li>
+							<li>Familiar with the most common design patterns</li>
+							<li>Prepared to work with code review</li>
+						</ul>
+					</li>
+
+					<li><span class="fa-li"><i class="fas fa-cogs"></i></span>
+						<h4>Mindful of software versatility aspects</h4>
+						<ul class="unindented-list">
+							<li>Internationalization</li>
+							<li>Code reusability</li>
+							<li>Platform independence</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+</body>
+</html>
