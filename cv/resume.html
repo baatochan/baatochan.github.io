@@ -9,8 +9,10 @@
 
 <!DOCTYPE html>
 <!--suppress CssFloatPxLength -->
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<title>Bartosz Rodziewicz</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Open+Sans:400,400i,700,700i" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous" />
 	<style>
@@ -45,6 +47,9 @@
 		}
 		header > * {
 			margin-right: 5mm;
+		}
+		#photo-verticaly-centered {
+			display: flex; align-items: center; justify-content: center
 		}
 		#photo {
 			border: 2px solid #efefef;
@@ -91,9 +96,9 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			margin: 0 0 0.375rem 0;
+			margin: 0.375rem 0 0.375rem 0;
 		}
-		p#phone {
+		span#phone {
 			font-size: 0.875em;
 		}
 		a#email, a.link {
@@ -183,12 +188,14 @@
 <body>
 	<section>
 		<header>
-			<img id="photo" src="me.png" />
+			<div id="photo-verticaly-centered">
+				<img id="photo" src="me.png" />
+			</div>
 			<div id="headerinfo">
 				<div>
 					<h1>Bartosz Rodziewicz</h1>
 					<p><i class="far fa-envelope-open contact-icon"></i><a id="email" href="mailto:bartosz.rodziewicz@outlook.com">bartosz.rodziewicz@outlook.com</a></p>
-					<p id="phone"><i class="fas fa-phone fa-flip-horizontal contact-icon"></i>+48 724 572 321</p>
+					<p><i class="fas fa-phone fa-flip-horizontal contact-icon"></i><span id="phone">+48 724 572 321</span></p>
 				</div>
 				<div id="introduction">
 					<p>University student between sixth and seventh semester of bachelor studies, looking for an internship or a student job</p>
