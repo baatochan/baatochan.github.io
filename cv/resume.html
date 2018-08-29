@@ -39,7 +39,8 @@
 			flex-wrap: nowrap;
 			justify-content: flex-start;
 			padding: 15mm 10mm 5mm 15mm;
-			background: #228866;
+			background: #cb3551;
+			background-image: linear-gradient(to bottom, #FE4467, #cb3551);
 			color: #FFFFFF;
 		}
 		header > * {
@@ -84,12 +85,20 @@
 			justify-content: space-between;
 			margin: 0.375rem 0 0.375rem 0;
 		}
-		a#email {
+		a#email, a.link {
 			color: inherit;
+		}
+		a#email {
 			text-decoration: underline #FFFFFF40;
 		}
 		a#email:hover {
 			text-decoration-color: #FFFFFF80;
+		}
+		a.link {
+			text-decoration: underline #00000020;
+		}
+		a.link:hover {
+			text-decoration-color: #00000080;
 		}
 		div#introduction {
 			font-size: 0.875em;
@@ -100,6 +109,12 @@
 		ul.unindented-list {
 			list-style-type: none;
 			padding-left: 0;
+			overflow-wrap: break-word;
+		}
+		ul.unindented-list a.link p {
+			font-size: 0.8em;
+			margin: 0;
+			font-style: italic;
 		}
 		ul.unindented-list > li {
 			margin: 0.5em 0 0.5em 0;
@@ -110,7 +125,7 @@
 		}
 		ul.inline-blocklist > li {
 			display: inline;
-			padding: 0 0.125em;
+			padding: 0.125em 0.375em;
 			border: 1.25px solid;
 			border-radius: 0.25em;
 			background: #00000033
@@ -160,8 +175,8 @@
 					<p><a id="email" href="mailto:bartosz.rodziewicz@outlook.com">bartosz.rodziewicz@outlook.com</a></p>
 				</div>
 				<div id="introduction">
-					<p>University student between sixth and seventh semester of bachelor studies, looking for an internship or student job</p>
-					<p>Currently taking a year off to catch up on my studies</p>
+					<p>University student between sixth and seventh semester of bachelor studies, looking for an internship or a student job</p>
+					<p>Currently taking a year off to catch up on the studies</p>
 					<p>From Wrocław, Poland</p>
 				</div>
 			</div>
@@ -184,21 +199,42 @@
 				<h4>Hobbies</h4>
 				<ul class="unindented-list">
 					<li>Tinkering with computers and networks</li>
-					<li>Game development</li>
+					<li>Driving diffrent vehicles (simulators and real life)</li>
 					<li>Programming</li>
 					<li>Playing games</li>
-					<li>Live streaming</li>
 					<li>Solving problems</li>
+					<li>Amateur radio</li>
 				</ul>
 
 				<h4>Interests</h4>
 				<ul class="unindented-list">
-					<li>PC games</li>
 					<li>Computers and IT</li>
-					<li>Information security</li>
-					<li>Languages and translation</li>
+					<li>Japanese culture</li>
+					<li>Cartoons</li>
 					<li>Public transport</li>
-					<li>Urban planning</li>
+					<li>PC games</li>
+				</ul>
+
+				<h4>Links</h4>
+				<ul class="unindented-list">
+					<li>
+						<a href="https://github.com/baatochan" class="link">
+							GitHub portfolio
+							<p>github.com/baatochan</p>
+						</a>
+					</li>
+					<li>
+						<a href="https://profile-summary-for-github.com/user/baatochan" class="link">
+							GitHub summary
+							<p>profile-summary-for-github.com/user/baatochan</p>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/bartoszrodziewicz" class="link">
+							LinkedIn profile
+							<p>linkedin.com/in/bartoszrodziewicz</p>
+						</a>
+					</li>
 				</ul>
 			</aside>
 
@@ -231,12 +267,13 @@
 									<li style="border-color: #e34c26; background-color: #ffc2b3;">HTML</li>
 									<li style="border-color: #563d7c; background-color: #c6aaf2;">CSS</li>
 									<li style="border-color: #d9c841; background-color: #fff6b3;">JavaScript</li>
+									<li style="border-color: #bf7913; background-color: #f2d4aa;">Java</li>
 								</ul>
 							</li>
 							<li>
 								<p class="blocklist-label">Familiar with</p>
 								<ul class="inline-blocklist">
-									<li style="border-color: #bf7913; background-color: #f2d4aa;">Java</li>
+									<li style="border-color: #4f5d95; background-color: #a1aee6;">PHP</li>
 									<li style="border-color: #555555; background-color: #d9d9d9;">C</li>
 									<li style="border-color: #178600; background-color: #a3d998;">C#</li>
 									<li style="border-color: #7fcc4e; background-color: #c6f2aa;">Shell</li>
